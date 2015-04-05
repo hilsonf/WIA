@@ -12,7 +12,7 @@
   <script src="http://cdn.bootcss.com/jquery/2.1.1-rc2/jquery.min.js"></script>
   <script type="text/javascript" src="js/snow.js"></script>
   
-  <link rel="stylesheet" type="text/css" href="jvmobilemenu/jv-jquery-mobile-menu.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
   
 <!--   <meta name="MobileOptimized" content="width">
   <meta name="HandheldFriendly" content="true">
@@ -27,66 +27,16 @@
       font-family: sans-serif;
       -webkit-overflow-scrolling: touch;
     }*/
-    .page {
-      box-shadow: 0px 0px 6px #999;
-    }
 
-    /*article {
-      width: 90%;
-      max-width: 720px;
-      margin: 50px auto;
-    }
-    h3 {
-      margin: 35px 0 15px;
-      font-size: 18px;
-    }
-    p {
-      margin: 35px 0;
-    }
-    code {
-      font-size: 12px;
-      line-height: 15px;
-      width: 100%;
-      word-break: break-all;
-      word-wrap: break-word;
-    }
-    td {
-      padding: 10px 1% 10px 0;
-    }
-    td.col1 {
-      width: 160px;
-    }
-    .left {
-      color: blue;
-    }
-    .left:hover {
-      text-decoration: underline;
-      cursor: pointer;
-    }*/
-    .snow-canvas {
-    display: block;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    position: fixed;
-    pointer-events: none;
-}
-section{
-    width: 75%;
-    margin: 0 auto;
-    padding-top: 100px;
-}
-#logo{
-    text-align:center; 
-    position: relative;
-    padding-top: 20px;   
-}
-    
   </style>
 </head>
 
 <body>
+              <canvas class="snow-canvas" speed="1" interaction="false" size="2" count="80" opacity="0.00001" start-color="rgba(253,252,251,1)" end-color="rgba(251,252,253,0.3)" wind-power="0" image="false" width="1366" height="667"></canvas>
+
+            <canvas class="snow-canvas" speed="3" interaction="true" size="6" count="30" start-color="rgba(253,252,251,1)" end-color="rgba(251,252,253,0.3)" opacity="0.00001" wind-power="2" image="false" width="1366" height="667"></canvas>
+
+            <canvas class="snow-canvas" speed="3" interaction="true" size="12" count="20" wind-power="-5" image="imgs/snow.png" width="1366" height="667"></canvas>
 <header>
   <div class="mobile-nav">
     <ul>
@@ -101,14 +51,10 @@ section{
   <div class="page">
 
     <div class="container">
-        <div class="pt-section" data-name="" id="ptsection-one">
+      <div class="pt-section" data-name="" id="ptsection-one">
       <div id="logo"><img src="imgs/logo2.png" alt="logo"></div>
 
-            <canvas class="snow-canvas" speed="1" interaction="false" size="2" count="80" opacity="0.00001" start-color="rgba(253,252,251,1)" end-color="rgba(251,252,253,0.3)" wind-power="0" image="false" width="1366" height="667"></canvas>
 
-            <canvas class="snow-canvas" speed="3" interaction="true" size="6" count="30" start-color="rgba(253,252,251,1)" end-color="rgba(251,252,253,0.3)" opacity="0.00001" wind-power="2" image="false" width="1366" height="667"></canvas>
-
-            <canvas class="snow-canvas" speed="3" interaction="true" size="12" count="20" wind-power="-5" image="imgs/snow.png" width="1366" height="667"></canvas>
             <section>
               <button> The button </button>
               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
@@ -120,19 +66,146 @@ section{
         <div class="pt-section" data-name="" id="ptsection-two">
 
           <section>
-              <button> The button </button>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <div class="gallery">
+        <div class="section__content clearfix">
+          <div class="card effect__hover">
+            <div class="card__front">
+              <img src="imgs/whistler.jpg" alt="Whistler Canada">
+              <span class="card__text">Clock to diew </span>
+            </div>
+            <div class="card__back">
+              <span class="card__text">back</span>
+            </div>
+          </div><!-- /card -->
+          <div class="card effect__hover">
+            <div class="card__front">
+            <img src="imgs/mamoth.jpg" alt="Mamoth USA">
+              <span class="card__text">front</span>
+            </div>
+            <div class="card__back">
+              <span class="card__text">back</span>
+            </div>
+          </div><!-- /card -->
+          <div class="card effect__hover">
+            <div class="card__front">
+              <img src="imgs/davos.jpg" alt="Davos">
+              <span class="card__text">front</span>
+            </div>
+            <div class="card__back">
+              <span class="card__text">back</span>
+            </div>
+          </div><!-- /card -->
+          <div class="card effect__hover">
+            <div class="card__front">
+              <img src="imgs/vibier.jpg" alt="vibier">
+              <span class="card__text">front</span>
+            </div>
+            <div class="card__back">
+              <span class="card__text">back</span>
+            </div>
+          </div>
+        </div><!-- /card -->
+      </div>
 
-              <p>
-              t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
-            </section>
 
-        </div>
+
+
+
+
+        <div class="section__content clearfix">
+          <div class="card effect__hover">
+            <div class="card__front">
+              <img src="imgs/whistler.jpg" alt="Whistler Canada">
+              <span class="card__text">Clock to diew </span>
+            </div>
+            <div class="card__back">
+              <span class="card__text">back</span>
+            </div>
+          </div><!-- /card -->
+          <div class="card effect__hover">
+            <div class="card__front">
+            <img src="imgs/mamoth.jpg" alt="Mamoth USA">
+              <span class="card__text">front</span>
+            </div>
+            <div class="card__back">
+              <span class="card__text">back</span>
+            </div>
+          </div><!-- /card -->
+          <div class="card effect__hover">
+            <div class="card__front">
+              <img src="imgs/davos.jpg" alt="Davos">
+              <span class="card__text">front</span>
+            </div>
+            <div class="card__back">
+              <span class="card__text">back</span>
+            </div>
+          </div><!-- /card -->
+          <div class="card effect__hover">
+            <div class="card__front">
+              <img src="imgs/vibier.jpg" alt="vibier">
+              <span class="card__text">front</span>
+            </div>
+            <div class="card__back">
+              <span class="card__text">back</span>
+            </div>
+          </div>
+        </div><!-- /card -->
+
+
+        </section>
+      </div>   
+    </div>
         <!--<div class="pt-section" data-name="Section Three" id="ptsection-three"></div>-->
 <!--         <div class="pt-section" data-name="Section Four" id="ptsection-four"></div>
- -->    </div>
+ -->    
 
+<footer>
+<div class="section group">
+  <div class="col span_1_of_4">
+  <h4>Email</h4>
+     <p><a href="mailto:www.jcjerkspot.com/contact-us/" target="_top">@jerskpot.com</a>
+     </p>
   </div>
+
+  <div class="col span_1_of_4">
+  <h4>Phone</h4>
+    <p>(407)-618-0403</p>
+  </div>
+  <div class="col span_1_of_4">
+  <h4>Address</h4>
+    <address><p>The Jerk Spot<br> 250 Semoran Blvd. <br> Winter Park FL, 32792</p></address>
+  </div>
+  <div class="col span_1_of_4">
+  <h4>Social Media</h4>
+    <!-- <p>
+      <a href="https://www.facebook.com/pages/Jamaican-Cuisine-JERK-SPOT/162009173854211/" target="_blank">
+      <svg viewBox="0 0 33 33" class="icon">
+      <use xlink:href="#facebook"></use>
+      </svg>
+      </a>
+
+      <a href="https://plus.google.com/101930973469188700056/about?gl=us&hl=en" target="_blank">
+      <svg viewBox="0 0 33 33" class="icon">
+      <use xlink:href="#google"></use>
+      </svg>
+      </a>
+
+      <a href="http://www.yelp.com/biz/jamaican-jerk-spot-winter-park" target="_blank">
+      <svg viewBox="0 0 100 100" class="icon">
+      <use xlink:href="#yelp"></use>
+      </svg>
+      </a>
+
+
+    </p> -->
+  </div>
+</div>
+</footer>
+
+</div>
+
+
+
 
 
 <!--snow fall background script-->
@@ -142,7 +215,7 @@ section{
 </script>
 
 
-
+<!--pagination -->
 <script src="js/tracker.js"></script>
 <script>
     (function() {
@@ -160,7 +233,7 @@ section{
  <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
   <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
   
-  <script src="jvmobilemenu/jv-jquery-mobile-menu.js"></script>
+  <script src="js/menu.js"></script>
   
   <script src="js/script.js"></script>
   

@@ -10,5 +10,7 @@
   });
 
   $('.mobile-nav .mobile-menu').removeAttr('overflow-y');
-  
+
+  /*=====================	Background Image Rotate ======================*/
+
 })(jQuery);

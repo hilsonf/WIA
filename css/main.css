@@ -250,12 +250,20 @@ section{
     overflow: hidden;
     width: 75%;
     margin: 0 auto;
-    padding: 100px 0 250px 0;
 }
+
+#ptsection-one section{
+   padding: 100px 0 300px 0;
+}
+
+#ptsection-two section{
+  padding: 100px 0 130px 0;
+}
+
 
 .gallery{
   overflow: hidden;
-  padding-bottom: 80px;
+  padding-bottom: 40px;
 }
 
 #logo{
@@ -300,9 +308,13 @@ section{
   float: left;
 /*  padding-bottom: 25%;
 */  
-  padding-bottom: 17%;
+  padding-bottom: 17.2%;
   width: 25%;
   text-align: center;
+}
+
+div.section__content.clearfix{
+  padding-top: 4px;
 }
 
 .card:nth-child(1) {
@@ -369,34 +381,33 @@ section{
           transform: rotateY(0);
 }
 
-/* click effect */
-.card.effect__click.flipped .card__front {
-  -webkit-transform: rotateY(-180deg);
-          transform: rotateY(-180deg);
-}
 
-.card.effect__click.flipped .card__back {
-  -webkit-transform: rotateY(0);
-          transform: rotateY(0);
-}
-
-/* random effect */
-.card.effect__random.flipped .card__front {
-  -webkit-transform: rotateY(-180deg);
-          transform: rotateY(-180deg);
-}
-
-.card.effect__random.flipped .card__back {
-  -webkit-transform: rotateY(0);
-          transform: rotateY(0);
-}
 
 footer{
   text-align: center;
 }
 
+@media screen and (min-width: 500px) and (max-width: 800px){
+  .card{
+    width: 50%;
+  }
+  .more{
+    clear: left;
+    padding-top: 18%;
+  }
+  .gallery{
+          padding-bottom: 74px;
+        }
+  .card__back{
+    padding-bottom: 35%;
+  }
 
-@media screen and (max-width: 800px){
+}
+
+
+
+
+@media screen and (max-width: 500px){
   .card{display: block;
         float: none;
         padding-bottom: 68%;
@@ -407,7 +418,7 @@ footer{
           margin: 0 0 30px 0;
         }
         .gallery{
-          margin-bottom: 0;
+          padding-bottom: 0;
         }
 
 }

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.4, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="109.156px" height="40px"
+	 viewBox="0 0 109.156 40" enable-background="new 0 0 109.156 40" xml:space="preserve">
+<title>logo</title>
+<description>Created with Sketch.</description>
+<g id="Page-1" sketch:type="MSPage">
+	<g id="Artboard-1" transform="translate(-30.000000, -20.000000)" sketch:type="MSArtboardGroup">
+		<circle id="logo" sketch:type="MSShapeGroup" fill="#E86B6B" cx="49.941" cy="40" r="20">
+		</circle>
+	</g>
+</g>
+<image overflow="visible" enable-background="new    " width="300" height="287" xlink:href="snow.png"  transform="matrix(0.1092 0 0 0.1092 3.5591 4.042)">
+</image>
+<text transform="matrix(1 0 0 1 44.834 17.5)"><tspan x="0" y="0" font-family="'Raleway-Medium'" font-size="12">Mountain</tspan><tspan x="0" y="14.4" font-family="'Raleway-Medium'" font-size="12">Top</tspan></text>
+</svg>

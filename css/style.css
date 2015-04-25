@@ -28,7 +28,9 @@ a {
   color: #639;
   text-decoration: none;
 }
-
+.clear{
+    clear: left;
+}
 
 img {
   max-width: 100%;
@@ -155,14 +157,11 @@ header {
   background: #639 url("../img/cd-cart.svg") no-repeat center center;
 }
 
-
-
-
 #main-nav, #cd-cart {
   position: fixed;
   top: 0;
   height: 100%;
-  width: 245px;
+  width: 260px;
   /* header height */
   padding-top: 50px;
   overflow-y: auto;
@@ -480,27 +479,47 @@ div.section__content.clearfix{
     color: #010101;
 }
 
+h1{
+    font-size: 2.5em;
+    font-weight: 600;
+    color: #639;
+    text-align: center;
+}
+
 h3{
     font-size: 1.2em;
     font-weight: 800;
     color: #639;
     padding: 10px;
 }
+.about, .stats{
+    padding: 8% 0 9% 0;
+}
+
 
 /*---------------Chart----------*/
 
+.statLeft{
+    float: left;
+    width: 40%;
+}
+
 .cir{
-    background-color: #e1e4df !important;
+    background-color: #639 !important;
 }
 
 .chart h3{
+    font-size: 2.5em;
+    color: #fffaf0;
     background: #5b005b;
-    padding: 5px;
+    padding: 3%;
     margin-bottom: 0;
+    border-radius: 50px;
 }
 
 
 .chart h4{
+    font-size: 2em;
     color: #26292f;
     padding: 10px;
 }
@@ -682,6 +701,13 @@ Media Query
 
 
 }
+@media screen and (max-width: 970px) {
+    .statLeft{
+        float: none;
+        width: 100%;
+        display: block;
+    }
+}
 
 @media screen and (max-width: 768px) {
   .col {  margin: 0 auto }
@@ -696,6 +722,13 @@ Media Query
   .chart-6{
         margin-left: 13%;
   }
+    .chart h3{
+        font-size: 2em;
+    }
+    .chart h4{
+        font-size: 1.2em;
+    }
+
 }
 
 @media screen and (max-width: 400px) {

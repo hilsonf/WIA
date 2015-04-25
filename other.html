@@ -19,18 +19,32 @@
 </head>
 <body>
 
-<div class="demo">
-    <div class="demo-4" data-percent="75"></div>
-    <div class="demo-5" data-percent="65"></div>
-    <div class="demo-6" data-percent="65"></div>
+<div class="chart">
+<h3>Difficulty Level</h3>
+<div class="section group">
+<div class="col span_1_of_3">
+<h4>Freestyle</h4>
+<div><img src="img/freestyle.svg" alt="freestyle"></div>
+<div class="chart-4" data-percent="75"></div>
 </div>
-
+<div class="col span_1_of_3">
+<h4> Free Riding</h4>
+<div><img src="img/freeriding.svg"></div>
+<div class="chart-5" data-percent="65"></div>
+</div>
+<div class="col span_1_of_3">
+<h4>Piste</h4>
+<div><img src="img/pistes.svg"></div>
+<div class="chart-6" data-percent="65"></div>
+</div>
+</div>
+</div>
 
 <script>
 
-    $('.demo-4').percentcircle({
+    $('.chart-4').percentcircle({
         animate : true,
-        diameter : 100,
+        diameter : 20,
         guage: 3,
         coverBg: '#fff',
         bgColor: '#efefef',
@@ -38,7 +52,7 @@
         percentSize: '18px',
         percentWeight: 'normal'
     });
-    $('.demo-5').percentcircle({
+    $('.chart-5').percentcircle({
         animate : true,
         diameter : 100,
         guage: 3,
@@ -46,10 +60,10 @@
         bgColor: '#efefef',
         fillColor: '#8BC163',
         percentSize: '18px',
-        percentWeight: '20px'
+        percentWeight: 'normal'
     });
 
-    $('.demo-6').percentcircle({
+    $('.chart-6').percentcircle({
         animate : true,
         diameter : 100,
         guage: 10,

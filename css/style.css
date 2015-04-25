@@ -29,6 +29,7 @@ a {
   text-decoration: none;
 }
 
+
 img {
   max-width: 100%;
 }
@@ -443,6 +444,12 @@ div.section__content.clearfix{
     padding-top: 4px;
 }
 
+.front{
+    color: #639;
+    padding-top: 28%;
+    font-size: 1.2em;
+    font-weight: 800;
+}
 
 /* card fronts and backs */
 .card__front,
@@ -468,6 +475,17 @@ div.section__content.clearfix{
     -webkit-transform: rotateY(-180deg);
     transform: rotateY(-180deg);
 }
+.card__back span{
+    padding: 5px;
+    color: #010101;
+}
+
+h3{
+    font-size: 1.2em;
+    font-weight: 800;
+    color: #639;
+    padding: 10px;
+}
 
 /*---------------Chart----------*/
 
@@ -480,6 +498,7 @@ div.section__content.clearfix{
     padding: 5px;
     margin-bottom: 0;
 }
+
 
 .chart h4{
     color: #26292f;
@@ -508,19 +527,11 @@ div.section__content.clearfix{
     bottom: 0;
     left: 0;
     margin: auto;
-    /*height: 75px;*/
-
-    color: #fff;
     font-family: "Roboto Slab", serif;
-    line-height: 20px;
+
 }
 
-.front{
-    color: #639;
-    padding-top: 30%;
-    font-size: 1.2em;
-    font-weight: 800;
-}
+
 
 /* hover effect */
 .card.effect__hover:hover .card__front {
@@ -665,6 +676,11 @@ Media Query
         margin-left: 13%;
     }
 
+    .card__back span{
+        padding-top: 6%;
+    }
+
+
 }
 
 @media screen and (max-width: 768px) {
@@ -684,15 +700,18 @@ Media Query
 
 @media screen and (max-width: 400px) {
 .card{
-    padding-bottom: 100%;
+    padding-bottom: 77%;
 }
     .chart-4,.chart-5,.chart-6{
         margin-top: 7%;
         margin-left: 1px;
     }
-    #cd-gallery-items li{
-        padding-bottom: 15%;
+    .card__back span{
+        font-size: .8em;
     }
+    /*#cd-gallery-items li{*/
+        /*padding-bottom: 15%;*/
+    /*}*/
     /*.span_1_of_3 div{*/
         /*margin-top: 10px;*/
     /*}*/

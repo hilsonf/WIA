@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>jQuery Circle Charts Plugin Demos</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="js/circlechart.js"></script>
+    <style>
+        .demo {
+            max-width: 960px;
+            margin: 150px auto;
+        }
+
+        .demo > div {
+            float: left;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="demo">
+    <div class="demo-4" data-percent="75"></div>
+    <div class="demo-5" data-percent="65"></div>
+    <div class="demo-6" data-percent="65"></div>
+</div>
+
+
+<script>
+
+    $('.demo-4').percentcircle({
+        animate : true,
+        diameter : 100,
+        guage: 3,
+        coverBg: '#fff',
+        bgColor: '#efefef',
+        fillColor: '#46CFB0',
+        percentSize: '18px',
+        percentWeight: 'normal'
+    });
+    $('.demo-5').percentcircle({
+        animate : true,
+        diameter : 100,
+        guage: 3,
+        coverBg: '#fff',
+        bgColor: '#efefef',
+        fillColor: '#8BC163',
+        percentSize: '18px',
+        percentWeight: '20px'
+    });
+
+    $('.demo-6').percentcircle({
+        animate : true,
+        diameter : 100,
+        guage: 10,
+        coverBg: '#fff',
+        bgColor: '#efefef',
+        fillColor: '#D870A9',
+        percentSize: '18px',
+        percentWeight: 'normal'
+    });
+
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+/* CSS Document */
+@charset "UTF-8";
+
+.chart-container { width: 100%; height: 177px; }
+
+.chart-title { background-color: #31353D; padding: 15px 0px 10px 15px; margin: 0px; font-size: 18px;  }
+.chart-title h2 { margin: 0px; color: #fff; font-family: 'Roboto Slab', serif; }
+.chart-title p { margin: 0px; color: #222; }
+
+.chart-content { height: 340px; position: relative; overflow: hidden; margin: 5px 0px 0px 0px; }
+
+.chart-y-axis { width: 9%; height: 145px; position: absolute; top: 0px; left: 0px; }
+.chart-y-axis p { margin: 0px 0px 0px 10px; padding: 0px 0px 0px 5px; width: 5%; position: absolute; color: #222; border-bottom: 1px solid #ccc; }
+
+.chart-x-axis { height: 50px; position: absolute; top: 145px; left: 50px; }
+.chart-x-axis p { position: absolute; top: 0px; width: 100px; color: #222; text-align: center; font-size: 14px; font-weight: bold; }
+.chart-area {
+	width: 100%;
+	height: 144px;
+	position: absolute;
+	top: 0px;
+	left: 50px;
+}
+
+.chart-area .chart-bar {
+	position: absolute;
+	bottom: 0px;
+	width: 50px;
+	height: 50px;
+	-webkit-border-top-left-radius: 10px;
+	-webkit-border-top-right-radius: 10px;
+	-moz-border-radius-topleft: 10px;
+	-moz-border-radius-topright: 10px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	background-repeat: no-repeat;
+	background-position: 50% bottom;
+}
+
+.chart-area .chart-bar.freeride  {
+    background-image: url(../img/freeriding.png);
+    background-color: #BF3641;
+}
+.chart-area .chart-bar.freestyle {
+    background-color: #174873;
+    background-image: url(../img/freestyle.png);
+}
+.chart-area .chart-bar.piste {
+    background-color: #BAD3D9;
+    background-image: url(../img/pistes.png);
+}
+
+.chart-area .chart-bar p { margin: 5px 0px 0px 0px; text-align: center; color: #fff; }
+
+@media screen and (max-width: 400px) {
+    .chart-area{
+        left: 30px;
+    }
+    .chart-x-axis{
+        left: 30px;
+    }
+}
+

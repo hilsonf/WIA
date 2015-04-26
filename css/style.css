@@ -154,14 +154,15 @@ header {
   right: 0;
 }
 #cd-cart-trigger a {
-  background: #639 url("../img/cd-cart.svg") no-repeat center center;
+  background: #639 url("../img/mapIcon.svg") no-repeat center center;
 }
 
-#main-nav, #cd-cart {
+#main-nav {
   position: fixed;
   top: 0;
   height: 100%;
   width: 260px;
+  /*width: 100%;*/
   /* header height */
   padding-top: 50px;
   overflow-y: auto;
@@ -169,8 +170,22 @@ header {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   z-index: 3;
 }
+ #cd-cart {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    /*width: 260px;*/
+    width: 100%;
+    /* header height */
+    padding-top: 50px;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    z-index: 3;
+}
+
 @media only screen and (min-width: 768px) {
-  #main-nav, #cd-cart {
+  #main-nav {
     width: 350px;
   }
 }
@@ -203,7 +218,8 @@ header {
 
 #cd-cart {
   right: -100%;
-  background: #FFF;
+  background:url("../img/fresh_snow.png");
+  /*opacity: 0.8;*/
   -webkit-transition: right 0.3s;
   -moz-transition: right 0.3s;
   transition: right 0.3s;
@@ -215,11 +231,12 @@ header {
   padding: 0 1em;
 }
 #cd-cart h2 {
-  font-size: 14px;
-  font-size: 0.875rem;
+  text-align: center;
+  color: #639;
+  font-size: 1.5em;
   font-weight: bold;
   text-transform: uppercase;
-  margin: 1em 0;
+  margin: 3em 0;
 }
 #cd-cart .cd-cart-items {
   padding: 0;
@@ -573,6 +590,14 @@ h3{
     pointer-events: none;
 }
 
+/*---------------Chart----------*/
+#map {
+    width: 100%;
+    height: 75%;
+    opacity: 0.8;
+    margin: 0 auto;
+    padding-top: 2%;
+}
 
 /* ---------------------------
 
@@ -598,7 +623,7 @@ Media Query
     #cd-hamburger-menu {
            display: none;
        }
-    #main-nav, #cd-cart {
+    #main-nav {
             width: 30%;
             /* header height has changed */
             padding-top: 80px;

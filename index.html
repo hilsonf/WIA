@@ -12,6 +12,8 @@
 	<script src="js/modernizr.js"></script> <!-- Modernizr -->
     <script src="http://cdn.bootcss.com/jquery/2.1.1-rc2/jquery.min.js"></script>
     <!--<script type="text/javascript" src="js/snow.js"></script>-->
+    <!--map-->
+    <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
 	<title>Mountain Top</title>
 </head>
 <body>
@@ -27,10 +29,7 @@
     <nav id="main-nav">
         <ul>
             <li><a href="index.html">Home</a></li>
-            <!--<li><a href="#0">About</a></li>-->
-            <!--<li><a class="current" href="#0">Services</a></li>-->
             <li><a href="locations.html">Locations</a></li>
-            <li><a href="#0">Shop</a></li>
         </ul>
     </nav>
 
@@ -42,7 +41,7 @@
             <div class="cd-container">
 
             <p>We measure awesomeness with strict adherence to quantitative and scientific methods.  The rankings you see here are the product of the most honed algorithms ever unleashed on the ski world.  Being on this list means something.  <strong>It means awesomeness.</strong></p>
-            <p class="summary"><a class="primaryButton" href="locations.html"> View Locations</a></p>
+            <p class="summary"><a class="primaryButton" href="whisperCanada.html"> View Locations</a></p>
             <canvas class="snow-canvas" speed="1" interaction="false" size="2" count="80" opacity="0.00001" start-color="rgba(253,252,251,1)" end-color="rgba(251,252,253,0.3)" wind-power="0" image="false" ></canvas>
 
             <canvas class="snow-canvas" speed="3" interaction="true" size="6" count="30" start-color="rgba(253,252,251,1)" end-color="rgba(251,252,253,0.3)" opacity="0.00001" wind-power="2" image="false" ></canvas>
@@ -54,34 +53,8 @@
 	<div id="cd-shadow-layer"></div>
 
 	<div id="cd-cart">
-		<h2>Cart</h2>
-		<ul class="cd-cart-items">
-			<!--<li>-->
-				<!--<span class="cd-qty">1x</span> Product Name-->
-				<!--<div class="cd-price">$9.99</div>-->
-				<!--<a href="#0" class="cd-item-remove cd-img-replace">Remove</a>-->
-			<!--</li>-->
-
-			<!--<li>-->
-				<!--<span class="cd-qty">2x</span> Product Name-->
-				<!--<div class="cd-price">$19.98</div>-->
-				<!--<a href="#0" class="cd-item-remove cd-img-replace">Remove</a>-->
-			<!--</li>-->
-
-			<!--<li>-->
-				<!--<span class="cd-qty">1x</span> Product Name-->
-				<!--<div class="cd-price">$9.99</div>-->
-				<!--<a href="#0" class="cd-item-remove cd-img-replace">Remove</a>-->
-			<!--</li>-->
-		</ul> <!-- cd-cart-items -->
-
-		<!--<div class="cd-cart-total">-->
-			<!--<p>Total <span>$39.96</span></p>-->
-		<!--</div> &lt;!&ndash; cd-cart-total &ndash;&gt;-->
-
-		<!--<a href="#0" class="checkout-btn">Checkout</a>-->
-		<!---->
-		<!--<p class="cd-go-to-cart"><a href="#0">Go to cart page</a></p>-->
+		<h2>Shred Maps</h2>
+        <div id="map"></div>
 	</div> <!-- cd-cart -->
 
 
@@ -129,7 +102,7 @@
     </footer>
 <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>-->
 <script src="js/main.js"></script> <!-- Gem jQuery -->
-
+<script src="js/map.js"></script>
 
     <script>
         $(".snow-canvas").snow();

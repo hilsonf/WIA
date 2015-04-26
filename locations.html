@@ -10,7 +10,10 @@
     <link rel="stylesheet" href="css/style.css"> <!-- Gem style -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="js/circlechart.js"></script>
-    <!--<link rel="stylesheet" type="text/css" href="css/chart.css">-->
+
+    <!--map-->
+    <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+
 
     <title>Mountain Top</title>
 </head>
@@ -24,10 +27,7 @@
 <nav id="main-nav">
     <ul>
         <li><a href="index.html">Home</a></li>
-        <!--<li><a href="#0">About</a></li>-->
-        <!--<li><a class="current" href="#0">Services</a></li>-->
         <li><a href="#0">Locations</a></li>
-        <li><a href="#0">Shop</a></li>
     </ul>
 </nav>
 
@@ -211,35 +211,10 @@
 <div id="cd-shadow-layer"></div>
 
 <div id="cd-cart">
-    <h2>Cart</h2>
-    <ul>
-        <!--<li>-->
-            <!--<span class="cd-qty">1x</span> Product Name-->
-            <!--<div class="cd-price">$9.99</div>-->
-            <!--<a href="#0" class="cd-item-remove cd-img-replace">Remove</a>-->
-        <!--</li>-->
-
-        <!--<li>-->
-            <!--<span class="cd-qty">2x</span> Product Name-->
-            <!--<div class="cd-price">$19.98</div>-->
-            <!--<a href="#0" class="cd-item-remove cd-img-replace">Remove</a>-->
-        <!--</li>-->
-
-        <!--<li>-->
-            <!--<span class="cd-qty">1x</span> Product Name-->
-            <!--<div class="cd-price">$9.99</div>-->
-            <!--<a href="#0" class="cd-item-remove cd-img-replace">Remove</a>-->
-        <!--</li>-->
-    </ul> <!-- cd-cart-items -->
-
-    <!--<div class="cd-cart-total">-->
-        <!--<p>Total <span>$39.96</span></p>-->
-    <!--</div> &lt;!&ndash; cd-cart-total &ndash;&gt;-->
-
-    <!--<a href="#0" class="checkout-btn">Checkout</a>-->
-
-    <!--<p class="cd-go-to-cart"><a href="#0">Go to cart page</a></p>-->
+    <h2>Shred Maps</h2>
+    <div id="map"></div>
 </div> <!-- cd-cart -->
+
 
 
 <footer>
@@ -291,5 +266,6 @@
 
 
 <script src="js/main.js"></script> <!-- Gem jQuery -->
+<script src="js/map.js"></script>
 </body>
 </html>

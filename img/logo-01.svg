@@ -2,16 +2,17 @@
 <!-- Generator: Adobe Illustrator 16.0.4, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Layer_1" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
-	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="109.156px" height="40px"
-	 viewBox="0 0 109.156 40" enable-background="new 0 0 109.156 40" xml:space="preserve">
-<g id="Page-1" sketch:type="MSPage">
-	<g id="Artboard-1" transform="translate(-30.000000, -20.000000)" sketch:type="MSArtboardGroup">
-		<circle id="logo" sketch:type="MSShapeGroup" fill="#E86B6B" cx="49.941" cy="40" r="20">
-		</circle>
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="126.893px"
+	 height="44.25px" viewBox="0 -4.25 126.893 44.25" enable-background="new 0 -4.25 126.893 44.25" xml:space="preserve">
+<text transform="matrix(1 0 0 1 51.4592 14.3896)" enable-background="new    "><tspan x="0" y="0" fill="#FFFFFF" font-family="'ColorsOfAutumn'" font-size="16.9863">Mountai</tspan><tspan x="64.42" y="0" fill="#FFFFFF" font-family="'ColorsOfAutumn'" font-size="16.9863" letter-spacing="1">n</tspan><tspan x="0" y="20.384" fill="#FFFFFF" font-family="'ColorsOfAutumn'" font-size="16.9863">Top</tspan></text>
+<g>
+	<g id="Page-1" sketch:type="MSPage">
+		<g id="Artboard-1" transform="translate(-30.000000, -20.000000)" sketch:type="MSArtboardGroup">
+			<circle id="logo" sketch:type="MSShapeGroup" fill="#FCB81B" cx="52.125" cy="37.875" r="22.125">
+			</circle>
+		</g>
 	</g>
+	<polygon fill="#FFFFFF" points="2.64,23.959 13.15,13.45 19.51,18.981 28.361,9.025 41.912,24.513 	"/>
+	<circle fill="#ED5947" cx="18.957" cy="14.971" r="1.245"/>
 </g>
-<text transform="matrix(1 0 0 1 44.8337 17.5)" fill="#FFFFFF" font-family="'ColorsOfAutumn'" font-size="12">Mountain</text>
-<text transform="matrix(1 0 0 1 44.8337 31.9004)" fill="#FFFFFF" font-family="'ColorsOfAutumn'" font-size="12">Top</text>
-<image overflow="visible" enable-background="new    " width="300" height="287" xlink:href="snow.png"  transform="matrix(0.1092 0 0 0.1092 3.5588 4.042)">
-</image>
 </svg>

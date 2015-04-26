@@ -43,8 +43,8 @@ img {
     padding: 10px;
     font-family: 'Roboto Slab', serif;
     font-weight: 800;
-    color: #ffffff;
-    background-color: orange;
+    color: #fff;
+    background-color: #5b005b;
     border: 1px solid #ffffff;
     border-radius: 5px;
     text-transform: capitalize;
@@ -54,7 +54,7 @@ img {
 }
 
 .primaryButton:hover {
-    background-color: rgba(239, 144, 20, 0.64);
+    background-color: #639;
 }
 
 .summary{
@@ -104,7 +104,7 @@ Modules - reusable parts of our design
 
 /* -------------------------------- 
 
-xheader 
+HEADER
 
 -------------------------------- */
 header {
@@ -236,7 +236,7 @@ header {
   font-size: 1.5em;
   font-weight: bold;
   text-transform: uppercase;
-  margin: 3em 0;
+  margin: 2.5em 0;
 }
 #cd-cart .cd-cart-items {
   padding: 0;
@@ -308,7 +308,7 @@ header {
 
 /* -------------------------------- 
 
-xgallery 
+GALLERY
 
 -------------------------------- */
 main {
@@ -322,6 +322,9 @@ main {
     background-attachment: fixed;
   /*padding-top: 70px;*/
   z-index: 1;
+}
+#cd-gallery-items{
+    padding-top: 4%;
 }
 @media only screen and (min-width: 768px) {
   .cd-container{
@@ -347,10 +350,6 @@ main {
   #cd-gallery-items li:nth-child(2n) {
     margin-right: 0;
   }
-    /*.span_1_of_3 div{*/
-        /*margin-top: 20px;*/
-    /*}*/
-
 }
 
 
@@ -762,7 +761,7 @@ Media Query
 }
     .chart-4,.chart-5,.chart-6{
         margin-top: 7%;
-        margin-left: 1px;
+        margin-left: 10px;
     }
     .card__back span{
         font-size: .8em;

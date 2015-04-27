@@ -91,3 +91,59 @@ function AutoCenter() {
     map.fitBounds(bounds);
     }
 AutoCenter();
+
+//
+//
+$(document).ready(function() {
+    // when the form changes
+    $('#mapForm').change(function(){
+        // create variable to hold selected information
+        var selectedContinent = $('#mapForm option:selected').val();
+
+        // if statement
+        if (selectedContinent == "ALL") {
+            // show all
+            $('a.easy').slideDown(1000);
+            $('a.intermediate').slideDown(1000);
+            $('a.advanced').slideDown(1000);
+        }else{
+            // show the dots that are on the selected continent
+            // hide other
+            $('a.easy[continent = "'+selectedContinent+'"]').slideDown(1000);
+            $('a.easy[continent != "'+selectedContinent+'"]').slideUp(1000);
+
+            $('a.intermediate[continent = "'+selectedContinent+'"]').slideDown(1000);
+            $('a.intermediate[continent != "'+selectedContinent+'"]').slideUp(1000);
+
+            $('a.advanced[continent = "'+selectedContinent+'"]').slideDown(1000);
+            $('a.advanced[continent != "'+selectedContinent+'"]').slideUp(1000);
+
+
+            // $('a.dot[continent != "'+selectedContinent+'"]').slideUp(1000);
+        }
+    })
+
+    // // dot code
+    // //when ever the dot is clicked
+    // $('a.dot').click(function(){
+    // 	//remove selected class
+    // 	$('a.dot').removeClass("selected");
+
+    // 	// add selected class on the clicked anchor
+    // 	$(this).addClass("selected");
+
+    // 	// create a variable to hold information for matching div
+    // 	var country = ".country_detail#"+$(this).attr("country");
+
+    // 	//variable to hold the html code
+    // 	var htmlCode = $(country).html();
+
+    // 	// annimate the container
+    // 	$(".detail_container").fadeOut(500, function(){
+    // 		//the country is hidden
+    // 		//put html in the container and fade it back
+    // 		$(".detail_container .country_detail").html(htmlCode);
+    // 		$(".detail_container").fadeIn(500);
+    // 	})
+    // })
+});

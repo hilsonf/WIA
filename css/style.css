@@ -36,6 +36,12 @@ img {
   max-width: 100%;
 }
 
+/* --------------------------------
+
+BUTTONS
+
+-------------------------------- */
+
 .primaryButton {
     display: inline-block;
     min-width: 26.9%;
@@ -56,6 +62,32 @@ img {
 .primaryButton:hover {
     background-color: #639;
 }
+
+.secondaryButton {
+    display: inline-block;
+     min-width: 20%;
+    margin-top: 10px;
+    padding: 3px;
+    font-family: "Roboto Slab",serif;
+    font-weight: 800;
+    color: #FFF;
+    background-color: #fab000;
+    border: 1px solid #FFF;
+    border-radius: 5px;
+    text-transform: capitalize;
+    text-align: center;
+    transition: all 0.1s ease 0s;
+    cursor: pointer;
+}
+
+.secondaryButton:hover {
+    background-color: #639;
+}
+/* --------------------------------
+
+CTA Summary
+
+-------------------------------- */
 
 .summary{
     margin-top: 50px;
@@ -208,6 +240,10 @@ header {
   padding: 0 1em;
   border-bottom: 1px solid #e0e6ef;
 }
+#main-nav ul a:hover{
+    color: #ffffff;
+}
+
 #main-nav ul .current {
   box-shadow: inset 3px 0 #435779;
 }
@@ -406,11 +442,24 @@ xkeyframes
 
 
 
+
+
+
 footer{
     text-align: center;
     background-color: #eeeff7;
     padding: 10px 0 10px 0;
 }
+
+footer h4{
+    color: #fab000;
+    font-size: 1.2em;
+    padding-bottom: 7px;
+}
+footer p{
+    color: #010101;
+}
+
 /*  COLUMN SETUP  */
 .col {
     display: block;
@@ -444,7 +493,7 @@ footer{
 
 /* ---------------------------
 
-card
+CARD
 
 ------------------------------*/
 
@@ -460,7 +509,7 @@ div.section__content.clearfix{
 }
 
 .front{
-    color: #639;
+    color: #fab000;
     padding-top: 28%;
     font-size: 1.2em;
     font-weight: 800;
@@ -508,16 +557,48 @@ h3{
     color: #639;
     padding: 10px;
 }
-.about, .stats{
-    padding: 8% 0 9% 0;
+h1 > p{
+    padding: 5% 0 5% 0;
+}
+
+.stats{
+    overflow: hidden;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 
+
 /*---------------Chart----------*/
+/*#piechart{*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+/*}*/
+
+#chart_wrap {
+    /*border:1px solid gray;*/
+    position: relative;
+    padding-bottom: 22%;
+    height: 269px;
+    width: 100%;
+    overflow:hidden;
+}
+#piechart {
+    position: absolute;
+    top: 0;
+    left:0;
+    width:100%;
+    height:100%;
+}
 
 .statLeft{
     float: left;
-    width: 40%;
+    width: 70%;
+
+}
+.statRight{
+    float: left;
+    width: 30%;
 }
 
 .cir{
@@ -722,16 +803,28 @@ Media Query
     .card__back span{
         padding-top: 6%;
     }
-
-
-}
-@media screen and (max-width: 970px) {
-    .statLeft{
+    .statLeft, .statRight{
         float: none;
         width: 100%;
         display: block;
+        overflow: auto;
     }
+    .statRight{
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
+
 }
+/*@media screen and (max-width: 970px) {*/
+    /*.statLeft, .statRight{*/
+        /*float: none;*/
+        /*width: 100%;*/
+        /*display: block;*/
+        /*overflow: auto;*/
+    /*}*/
+
+/*}*/
 
 @media screen and (max-width: 768px) {
   .col {  margin: 0 auto }

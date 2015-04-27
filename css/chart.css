@@ -82,36 +82,36 @@
 
 .chart-area .chart-bar p { margin: 5px 0px 0px 0px; text-align: center; color: #fff; }
 
-@media screen and (max-width: 1215px){
-    .chart-x-axis {
-        left: 70px; }
-    .chart-area {
-        left: 70px;
-    }
-}
+/*@media screen and (max-width: 1215px){*/
+    /*.chart-x-axis {*/
+        /*left: 70px; }*/
+    /*.chart-area {*/
+        /*left: 70px;*/
+    /*}*/
+/*}*/
 
-@media screen and (max-width: 970px) {
-    .chart-x-axis {
-        left: 250px; }
-    .chart-area {
-        left: 250px;
-    }
-}
+/*@media screen and (max-width: 970px) {*/
+    /*.chart-x-axis {*/
+        /*left: 250px; }*/
+    /*.chart-area {*/
+        /*left: 250px;*/
+    /*}*/
+/*}*/
 
-@media screen and (max-width: 768px) {
-    .chart-x-axis {
-        left: 100px; }
-    .chart-area {
-        left: 100px;
-    }
-}
+/*@media screen and (max-width: 768px) {*/
+    /*.chart-x-axis {*/
+        /*left: 100px; }*/
+    /*.chart-area {*/
+        /*left: 100px;*/
+    /*}*/
+/*}*/
 
-@media screen and (max-width: 400px) {
-    .chart-area{
-        left: 15px;
-    }
-    .chart-x-axis{
-        left: 15px;
-    }
-}
+/*@media screen and (max-width: 400px) {*/
+    /*.chart-area{*/
+        /*left: 15px;*/
+    /*}*/
+    /*.chart-x-axis{*/
+        /*left: 15px;*/
+    /*}*/
+/*}*/
 

@@ -612,6 +612,12 @@ h1{
     margin-top: 0;
 }
 
+.card__back span  h3{
+    font-size: 1.2em;
+    color: #639;
+    padding: 10px;
+    font-weight: 800;
+}
 
 .chart h3{
     font-size: 1.2em;

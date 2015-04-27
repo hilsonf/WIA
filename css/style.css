@@ -36,33 +36,23 @@ img {
   max-width: 100%;
 }
 
+.about{
+    width: 90%;
+    margin:  0 auto;
+    padding-bottom: 1%;
+    padding-top: 3%;
+}
+
+
 /* --------------------------------
 
 BUTTONS
 
 -------------------------------- */
 
-.primaryButton {
-    display: inline-block;
-    min-width: 26.9%;
-    margin: 50px 10px 50px 0;
-    padding: 10px;
-    font-family: 'Roboto Slab', serif;
-    font-weight: 800;
-    color: #fff;
-    background-color: #5b005b;
-    border: 1px solid #ffffff;
-    border-radius: 5px;
-    text-transform: capitalize;
-    text-align: center;
-    transition: all 0.1s ease 0s;
-    cursor: pointer;
+.back{
+    float: right;
 }
-
-.primaryButton:hover {
-    background-color: #639;
-}
-
 .secondaryButton {
     display: inline-block;
      min-width: 20%;
@@ -70,18 +60,20 @@ BUTTONS
     padding: 3px;
     font-family: "Roboto Slab",serif;
     font-weight: 800;
+    font-size: .7em;
     color: #FFF;
-    background-color: #fab000;
+    background-color: #639;
     border: 1px solid #FFF;
     border-radius: 5px;
     text-transform: capitalize;
     text-align: center;
-    transition: all 0.1s ease 0s;
+
     cursor: pointer;
 }
 
 .secondaryButton:hover {
-    background-color: #639;
+    background-color: #fab000;
+    transition: all 0.1s ease 0s;
 }
 /* --------------------------------
 
@@ -89,9 +81,13 @@ CTA Summary
 
 -------------------------------- */
 
-.summary{
+#summary{
     margin-top: 50px;
     text-align: center;
+    color: #fcfffa;
+    font-weight: 200;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.65);
 }
 
 
@@ -441,6 +437,35 @@ xkeyframes
 }
 
 
+/*@keyframes slide {*/
+    /*0% {*/
+        /*left: 0;*/
+        /*top: 0;*/
+    /*}*/
+    /*50% {*/
+        /*left: 244px;*/
+        /*top: 100px;*/
+    /*}*/
+    /*100% {*/
+        /*left: 488px;*/
+        /*top: 0;*/
+    /*}*/
+/*}*/
+
+/*.chart:hover .ball {*/
+    /*animation-name: slide;*/
+    /*animation-duration: 5s;*/
+    /*animation-timing-function: ease-in-out;*/
+    /*animation-delay: 5s;*/
+    /*animation-iteration-count: infinite;*/
+    /*animation-direction: alternate;*/
+/*}*/
+/*.ball {*/
+    /*background: url("../img/iconFloat.png") no-repeat;*/
+    /*height: 300px;*/
+    /*position: absolute;*/
+    /*width: 300px;*/
+/*}*/
 
 
 
@@ -551,15 +576,48 @@ h1{
     text-align: center;
 }
 
-h3{
+h2{
+    font-size: 2.5em;
+    color: #FFFAF0;
+    background: #5B005B;
+    padding: 3%;
+    margin-top: 4%;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.statLeft h2{
+    font-size: 1.5em;
+    background: #5B005B ;
+    color: #fff;
+    width: 440px;
+    text-align: center;
+    border-radius: 0;
+    padding: 0;
+    margin-top: 0;
+}
+
+.statRight h2{
+    font-size: 1.5em;
+    background: #5B005B ;
+    color: #fff;
+    width: 347px;
+    text-align: center;
+    border-radius: 0;
+    padding: 0;
+    margin-top: 0;
+}
+
+
+.chart h3{
     font-size: 1.2em;
-    font-weight: 800;
     color: #639;
     padding: 10px;
 }
-h1 > p{
-    padding: 5% 0 5% 0;
-}
+
+/*h1 > p{*/
+    /*padding: 5% 0 5% 0;*/
+/*}*/
 
 .stats{
     overflow: hidden;
@@ -570,10 +628,11 @@ h1 > p{
 
 
 /*---------------Chart----------*/
-/*#piechart{*/
-    /*width: 100%;*/
-    /*height: 100%;*/
-/*}*/
+.chart{
+    width: 90%;
+    margin: 0 auto;
+}
+
 
 #chart_wrap {
     /*border:1px solid gray;*/
@@ -859,6 +918,10 @@ Media Query
     .card__back span{
         font-size: .8em;
     }
+    .statRight h2{
+        width: 100%;
+    }
+
     /*#cd-gallery-items li{*/
         /*padding-bottom: 15%;*/
     /*}*/

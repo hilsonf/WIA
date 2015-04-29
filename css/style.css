@@ -635,6 +635,10 @@ h1{
     margin-bottom: 5%;
 }
 
+video{
+    width: 40% !important;
+    height: auto !important;
+}
 
 
 /*---------------Chart----------*/

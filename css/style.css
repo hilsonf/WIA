@@ -62,7 +62,7 @@ BUTTONS
     font-weight: 800;
     font-size: .7em;
     color: #FFF;
-    background-color: #639;
+    background-color: rgba(74, 212, 169, 0.75);;
     border: 1px solid #FFF;
     border-radius: 5px;
     text-transform: capitalize;

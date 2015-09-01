@@ -1,0 +1,55 @@
+
+.map_container {
+    background-image: url(../img/map.png);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    height: 275px;
+    width: 440px;
+    position: relative;
+}
+
+.map_container a.easy {
+    background-image: url(../img/easy.png);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    height: 275px;
+    width: 440px;
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+
+}
+.map_container a.intermediate {
+    background-image: url(../img/intermediate.png);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    height: 275px;
+    width: 440px;
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+
+}
+.map_container a.advanced {
+    background-image: url(../img/advanced.png);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    height: 275px;
+    width: 440px;
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+}
+
+.map_container .form_continent {
+    position: absolute;
+    z-index: 1;
+    bottom: 59px;
+    left: 5px;
+}
+
+
+

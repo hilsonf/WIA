@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
+<!-- CSS reset -->
+    <link rel="stylesheet" href="css/reset.css">
+<!-- Main style -->
+    <link rel="stylesheet" href="css/style.css">
+<!-- Interactive Map style -->
+    <link rel="stylesheet" href="css/map.css">
+<!-- Lightbox style -->
+    <link rel="stylesheet" href="css/lightbox.css">
+<!-- google map-->
+    <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+<!-- jquery-->
+    <script src="http://cdn.bootcss.com/jquery/2.1.1-rc2/jquery.min.js"></script>
+<!--google chart-->
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+
+    <title>Mountain Top</title>
+</head>
+<body>
+
+
+<header>
+    <div id="logo"><a href="index.html"><img src="img/logo-01.png" alt="Homepage"></a></div>
+    <div id="cd-hamburger-menu"><a class="cd-img-replace" href="#0">Menu</a></div>
+    <div id="cd-cart-trigger"><a class="cd-img-replace" href="#0">Map</a></div>
+</header>
+
+<nav id="main-nav">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="locations.html">Locations</a></li>
+    </ul>
+</nav>
+
+
+
+
+<!--</div>-->
+<main>
+    <div class="cd-container">
+        <h1>Whistler, Canada</h1>
+        <p><a class="back" href="locations.html">Back</a></p>
+
+        <div class="about clear">
+            <p>Whistler/Blackcomb. Where to begin? Repeatedly rated as the No. 1 resort in North America and not without reason, Whistler hosted the 2010 Winter Olympics (with Vancouver) and is arguably one of the best resorts in the world. A combination of absolutely unbelievable terrain combined with proximity to Vancouver places Whistler in the super-resort league, but glitz aside, experience the riding here for yourself to see why it lives up to its reputation. Two monstrous mountains cradle the purpose-built village of Whistler itself, and the year-round population of 10,000 swells to 5 times that during peak season - beware school holidays. Now almost as famous for its amazing mountain biking as its snowboarding (freestyle adrenaline-seekers on summer camps should check out the downhill park!), Whistler is a magical encounter for all ability levels. You really can ride here for years without becoming bored.
+            </p>
+            <h2>Gallery</h2>
+        </div>
+
+
+
+
+        <ul id="cd-gallery-items" class="cd-container">
+            <li>
+                <a href="img/canada1.jpg" data-lightbox="example-set" data-title="7 inches of snow 7 inches of heaven"><img class="example-image" src="img/canada1.jpg" alt=""/></a> <!--  Lightbox-->
+            </li>
+
+            <li>
+                <a href="img/canada2.jpg" data-lightbox="example-set" data-title="Who says snowboarders cant fly.."><img class="example-image" src="img/canada2.jpg" alt="" /></a> <!--  Lightbox-->
+            </li>
+            <li>
+                <a href="img/canada3.jpg" data-lightbox="example-set" data-title="Up up UP and Awayyyy......"><img class="example-image" src="img/canada3.jpg" alt="" /></a><!--  Lightbox-->
+            </li>
+
+            <li>
+                <a href="img/canada4.jpg" data-lightbox="example-set" data-title="Cutting a new trail through this Fresh Powder ;)"><img class="example-image" src="img/canada4.jpg" alt="" /></a> <!--  Lightbox-->
+            </li>
+            <li>
+                <a href="img/canada5.jpg" data-lightbox="example-set" data-title="Santa's Slay has nothing on these SKI's"><img class="example-image" src="img/canada5.jpg" alt="" /></a> <!--  Lightbox-->
+            </li>
+            <li>
+                <a href="video/WhishisperCanada.mp4" data-options="width: 480, height: 340, flashvars: { file: 'movie.mp4', stretching: 'exactfit' }" id="ilightbox"><img class="example-image" src="img/canada6.jpg" alt="" /></a>
+            </li>
+        </ul>
+
+        <div class="chart">
+            <h3>Mountain Stats</h3>
+            <div class="section group">
+                <div class="col span_1_of_3">
+                    <h4>Freestyle</h4>
+                    <div><img src="img/freestyle.svg" alt="freestyle"></div>
+                    <div class="chart-4" data-percent="75"></div> <!--  Circle chart-->
+                </div>
+                <div class="col span_1_of_3">
+                    <h4> Free Riding</h4>
+                    <div><img src="img/freeriding.svg"></div>
+                    <div class="chart-5" data-percent="65"></div> <!--  Circle chart-->
+                </div>
+                <div class="col span_1_of_3">
+                    <h4>Pistes</h4>
+                    <div><img src="img/pistes.svg"></div>
+                    <div class="chart-6" data-percent="65"></div> <!--  Circle chart-->
+                </div>
+            </div>
+        </div>
+        <svg height="120" width="100%">
+
+            <circle cx="0"
+                    cy="50"
+                    r="30"
+                    fill="#03F4FF">
+
+                <animate attributeName="cx" from="0" to="100%" dur="9s" repeatCount="indefinite"/>
+
+                <animate attributeName="r" values="30;10;30" dur="3" repeatCount="indefinite" />
+
+            </circle>
+
+            <circle cx="0"
+                    cy="50"
+                    r="30"
+                    fill="#FF1E00">
+
+                <animate attributeName="cx" from="0" to="100%" dur="8s" repeatCount="indefinite"/>
+
+                <animate attributeName="r" values="30;10;30" dur="3" repeatCount="indefinite" />
+
+            </circle>
+
+            <circle cx="0"
+                    cy="50"
+                    r="30"
+                    fill="#00E100">
+
+                <animate attributeName="cx" from="0" to="100%" dur="7s" repeatCount="indefinite"/>
+
+                <animate attributeName="r" values="30;10;30" dur="4" repeatCount="indefinite" />
+
+            </circle>
+
+
+        </svg>
+        <div class="stats">
+            <div class="statLeft">
+                <h2>Interactive Map</h2>
+                <div class="map_container" >
+                    <!-- Lines-->
+                    <form id="mapForm" name="mapForm" class="form_continent" method="post" action="">
+                        <select name="continent" id="continent">
+
+                            <option value="ALL" selected="selected" >Show All</option>
+                            <option value="Easy">Easy</option>
+                            <option value="Intermediate">Intermediate</option>
+                            <option value="Advanced">Advanced</option>
+
+                        </select>
+                    </form>
+
+                    <a  continent="Easy" class="easy" ></a>
+                    <a  continent="Intermediate" class="intermediate"></a>
+                    <a  continent="Advanced" class="advanced"></a>
+
+                </div><!-- end map container-->
+
+            </div><!-- end stats left-->
+            <div class="statRight">
+                <h2>Ride Distribution</h2>
+                <div id="chart_wrap"><div id="piechart"></div></div>
+
+            </div> <!-- end stats left-->
+
+
+
+        </div><!-- STATS-->
+
+    </div> <!-- container -->
+
+<div id="cd-shadow-layer"></div>
+
+    <!-- Shared Maps -->
+    <div id="cd-cart">
+        <h2>Shared Maps</h2>
+        <div id="map"></div>
+    </div>
+
+
+</main>
+
+<footer>
+    <div class="section group">
+        <div class="col span_1_of_4">
+            <h4>Email</h4>
+            <p><a href="#" target="_top">@mountaintop.com</a>
+            </p>
+        </div>
+
+        <div class="col span_1_of_4">
+            <h4>Phone</h4>
+            <p>(407)-618-0403</p>
+        </div>
+
+        <div class="col span_1_of_4">
+            <h4>Address</h4>
+            <address><p>Mountain Top<br> 665 Pine Lake <br> Winter Park FL, 32792</p></address>
+        </div>
+
+        <div class="col span_1_of_4">
+            <h4>Social Media</h4>
+            <p>
+                <a href="#" target="_blank">
+                    <img src="img/facebook.svg" alt="facebook">
+                </a>
+
+                <a href="#" target="_blank">
+                    <img src="img/twitter.svg" alt="twitter">
+                </a>
+
+                <a href="#" target="_blank">
+                    <img src="img/pinterest.svg" alt="pinterest">
+                </a>
+            </p>
+        </div>
+    </div>
+</footer>
+
+<!--lightbox-->
+<script src="js/lightbox.js"></script>
+<!--circle chart-->
+<script src="js/circlechart.js"></script>
+<!--map-->
+<script src="js/map.js"></script>
+<!--piechart-->
+<script type="text/javascript" src="js/piechart.js"></script>
+<!--main-->
+<script src="js/main.js"></script>
+<!--for circle chart-->
+<script>
+
+    $('.chart-4').percentcircle({
+        animate : true,
+        diameter : 20,
+        guage: 3,
+        coverBg: '#fff',
+        bgColor: '#efefef',
+        fillColor: '#03F4FF',
+        percentSize: '18px',
+        percentWeight: 'normal'
+    });
+    $('.chart-5').percentcircle({
+        animate : true,
+        diameter : 100,
+        guage: 3,
+        coverBg: '#fff',
+        bgColor: '#efefef',
+        fillColor: '#FF1E00',
+        percentSize: '18px',
+        percentWeight: 'normal'
+    });
+
+    $('.chart-6').percentcircle({
+        animate : true,
+        diameter : 100,
+        guage: 10,
+        coverBg: '#fff',
+        bgColor: '#efefef',
+        fillColor: '#00FF00',
+        percentSize: '18px',
+        percentWeight: 'normal'
+    });
+
+</script>
+
+</body>
+</html>
